@@ -27,7 +27,7 @@ peer chaincode package  -n enccc -v 0 -p enccc_example enccc.pak
 This contains the shim built from `github.com/muralisrini/shim`.
 
 ## Create the builder image
-Fabric currently uses `hyperledger/fabric-ccenv` to build GO chaincode image (at instantiation time.) ccenv image contains shim. Now that shim has been seperated out and combined with the enccc_example pakage, we no longer need ccenv to provide the shim dependency. We will provide a different builder image to build enccc_example.
+Fabric currently uses `hyperledger/fabric-ccenv` to build GO chaincode image (at instantiation time) where the ccenv image contains shim. Now that shim has been seperated out and combined with the enccc_example pakage, we no longer need ccenv to provide the shim dependency. We will provide a different builder image to build enccc_example.
 
 ### Use Dockerfile to build "builder" image
 ```
