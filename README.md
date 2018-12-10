@@ -7,8 +7,11 @@ The sample is copied as is and modified to replace "github.com/hyperledger/fabri
 ## Create the enccc install package
 ### Clone encc 
 mkdir <path>/enccc/src
+  
 export GOPATH=<path>/enccc
+  
 cd <path>/enccc/src
+  
 git clone https://github.com/muralisrini/enccc_example.git
 
 ### Get dependencies
