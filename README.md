@@ -1,8 +1,8 @@
-# EnCCC sample modified to use github.com/muralisrini/shim
+# EnCCC sample modified to use `github.com/muralisrini/shim`
 
-The enccc sample from fabric `github.com/hyperledger/fabric/examples/chaincode/go/enccc_example` is a bit more complex than "example02". It is chosen to illustrate separation of GO shim from fabric.
+The enccc sample from fabric `github.com/hyperledger/fabric/examples/chaincode/go/enccc_example` is chosen to illustrate separation of GO shim from fabric (rather than the simpler `example02`).
 
-The sample is copied as is and modified to replace `github.com/hyperledger/fabric/core/chaincode/shim` with `github.com/muralisrini/shim`.
+The only modification to the sample is to replace `github.com/hyperledger/fabric/core/chaincode/shim` with `github.com/muralisrini/shim`.
 
 ## Create the enccc install package
 ### Clone encc 
