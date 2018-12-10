@@ -16,14 +16,15 @@ git clone https://github.com/muralisrini/enccc_example.git
 
 ### Get dependencies
 cd enccc_example
+
 dep ensure
 
-This pulls in "github/muralisrini/shim" along with its dependencies.
+This pulls in `github/muralisrini/shim` along with its dependencies.
 
 ### Create install package
 peer chaincode package  -n enccc -v 0 -p enccc_example enccc.pak
 
-This contains the shim built from "github.com/muralisrini/shim".
+This contains the shim built from `github.com/muralisrini/shim`.
 
 ## Create the builder image
 Fabric currently uses "ccenv" to build GO chaincode image (at instantiation time.) ccenv image contains shim. Now that shim has been seperated out and combined with the enccc_example pakage, we will provide a different builder image to build enccc_example.
