@@ -1,4 +1,4 @@
-# EnCCC sample modified to use `github.com/muralisrini/shim`
+# Example using shim separated from fabric
 
 The enccc sample from fabric `github.com/hyperledger/fabric/examples/chaincode/go/enccc_example` is chosen to illustrate separation of GO shim from fabric (rather than the simpler `example02`).
 
