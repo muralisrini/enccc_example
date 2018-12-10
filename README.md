@@ -57,7 +57,7 @@ peer chaincode instantiate -n enccc -v 0 -C my-ch  -c '{"Args":["a"]}'
 ## Test
 Follow the README instructions in https://github.com/hyperledger/fabric/tree/master/examples/chaincode/go/enccc_example to test.
 
-##Conclusion
+## Conclusion
 The external `github.com/muralisrini/shim` is packaged with enccc_example using the `dep` tool. We provide a simpler builder to build the chaincode image that does not use the shim from fabric.
 
 ```
