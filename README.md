@@ -30,7 +30,9 @@ This contains the shim built from `github.com/muralisrini/shim`.
 Fabric currently uses `hyperledger/fabric-ccenv` to build GO chaincode image (at instantiation time.) ccenv image contains shim. Now that shim has been seperated out and combined with the enccc_example pakage, we no longer need ccenv to provide the shim dependency. We will provide a different builder image to build enccc_example.
 
 ### Use Dockerfile to build "builder" image
-docker build -t mybuilder .
+```
+docker build -t mybuilder:latest .
+```
 
 ### Point core.yaml to "mybuilder"
 Replace
