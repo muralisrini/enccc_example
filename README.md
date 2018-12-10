@@ -53,7 +53,7 @@ Create and join channel `my-ch`.
 ```
 peer chaincode install enccc.pak
 
-peer chaincode instantiate -n enccc -v 0 -C my-ch  -c '{"Args":["a"]}'
+peer chaincode instantiate -n enccc -v 0 -C my-ch  -c '{"Args":[""]}'
 ```
 
 ## Test
